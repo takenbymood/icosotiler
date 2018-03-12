@@ -56,19 +56,3 @@ def cover122Sphere(radius):
 
 def cover132Sphere(radius):
 	return coverSphere(radius,icostables.icos132)
-
-def lammpsPrint(coords):
-	atomNum = 2902
-	for c in coords:
-		line = str(atomNum)+" 3 "+str(c[0])+" "+str(c[1])+" "+str(c[2]+8) + "   1 1 0   0 0 0"
-		atomNum +=1
-		print(line)
-
-
-def main():
-	# for i in range(2921,2973):
-	# 	print(str(i)+'')
-	lammpsPrint(cover72Sphere(4.0))
-
-if __name__== "__main__":
-  main()
